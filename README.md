@@ -14,5 +14,5 @@ Created a docker compose YAML file so to start the image just ``docker compose u
 
 Connect to the GUI by going to http://localhost:7474/browser. When there select username and password "neo4j/password" (or whatever you have set "NEO4J_AUTH to) and click "Connect". Try out the 3 guides that are presented.
 
-Access a shell from the command line with ``docker compose exec neo4j bin/cypher-shell``. You need to supply the same username and passowrd as above.
+Access a shell from the command line with ``docker compose exec neo4j bin/cypher-shell``. You need to supply the same username and password as above.
 
