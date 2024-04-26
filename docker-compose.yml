@@ -1,0 +1,19 @@
+#
+# Docker Compose For Simple Neo4j Instance
+#
+
+---
+#version: "3.8"
+services:
+    neo4j:
+        hostname: neo4j
+        container_name: neo4j
+        environment:
+            NEO4J_AUTH: ${NEO4J_AUTH}
+        image: neo4j:${NEO4J_VERSION}${NEO4J_IMAGE_TYPE}
+        ports:
+            - 7474:7474
+            - 7687:7687
+        volumes:
+            - ${NEO4J_DATA}:/data
+              
